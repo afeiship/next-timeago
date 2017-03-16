@@ -1,7 +1,7 @@
 # timeago
 > A time ago implement.
 
-## rules:
+## Rules:
 ```conf
 以下顺序选择显示规则：
 1、60秒内：刚刚；
@@ -10,4 +10,16 @@
 4、昨天：昨天 04:25
 5、今年内：1-22 02:23
 6、往年的：2010-1-22
+```
+
+## install:
+```bash
+npm install --save afeiship/timeago
+```
+
+## Usage:
+```javascript
+var timeago = require('timeago');
+var str = timeago('2017-03-15 13:10:45');
+console.log(str);
 ```
