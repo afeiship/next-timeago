@@ -1,7 +1,7 @@
 # timeago
 > A time ago implement.
 
-## Rules:
+## rules:
 ```conf
 以下顺序选择显示规则：
 1、60秒内：刚刚；
@@ -17,7 +17,7 @@
 npm install --save afeiship/timeago
 ```
 
-## Usage:
+## usage:
 ```javascript
 var timeago = require('timeago');
 var str = timeago('2017-03-15 13:10:45');
