@@ -1,3 +1,5 @@
+# next-timeago
+> Timeago for next.
 # timeago
 > A time ago implement.
 

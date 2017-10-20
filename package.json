@@ -1,15 +1,30 @@
 {
-  "name": "timeago",
-  "version": "1.0.0",
-  "description": "A time ago implement.",
-  "main": "index.js",
-  "repository": "git@github.com:afeiship/timeago.git",
-  "author": "feizheng <1290657123@qq.com>",
-  "license": "MIT",
-  "scripts":{
-    "test":"mocha"
+  "name": "next-timeago",
+  "version": "0.0.0",
+  "description": "Timeago for next.",
+  "homepage": "https://github.com/afeiship/next-timeago",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
   },
+  "scripts": {
+    "build": "gulp"
+  },
+  "main": "dist/next-timeago.js",
+  "license": "MIT",
   "devDependencies": {
-    "mocha": "^3.2.0"
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^2.1.2",
+    "yargs": "^4.7.1",
+    "mocha": "^3.5.0"
+  },
+  "dependencies": {
+    "next-js-core2": "github:afeiship/next-js-core2"
   }
 }
