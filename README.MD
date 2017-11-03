@@ -14,12 +14,12 @@
 
 ## install:
 ```bash
-npm install --save afeiship/timeago
+npm install --save afeiship/next-timeago
 ```
 
 ## usage:
 ```javascript
-var timeago = require('timeago');
-var str = timeago('2017-03-15 13:10:45');
+var _ = require('next-timeago');
+var str = nx.timeago('2017-03-15 13:10:45');
 console.log(str);
 ```
