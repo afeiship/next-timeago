@@ -1,23 +1,21 @@
-(function () {
-
+(function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
 
-  nx.timeago = function (inValue, inNow) {
+  nx.timeago = function(inValue, inNow) {
     if (inValue) {
       var now = inNow ? new Date(inNow) : new Date();
-      var publish = (new Date(String(inValue).replace(/-/g, '/')));
+      var publish = new Date(String(inValue).replace(/-/g, '/'));
       var dayTs = 24 * 60 * 60 * 1000;
       var nowTs = now.getTime();
       var publishTs = publish.getTime();
       var isToday = publish.getDate() == now.getDate();
-      var isYesterday = (new Date(nowTs - dayTs)).getDate() == publish.getDate();
+      var isYesterday = new Date(nowTs - dayTs).getDate() == publish.getDate();
       var isMonth = publish.getMonth() == now.getMonth();
       var isYear = publish.getYear() == now.getYear();
       var diff_s = (nowTs - publishTs) / 1000;
       var diff_m = diff_s / 60;
       var diff_h = diff_m / 60;
-
 
       switch (true) {
         case diff_s < 60:
@@ -37,9 +35,7 @@
     return inValue;
   };
 
-
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = nx.timeago;
   }
-
-}());
+})();
