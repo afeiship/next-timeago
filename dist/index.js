@@ -3,7 +3,7 @@
  * description: A time ago implement.
  * homepage: https://github.com/afeiship/next-timeago
  * version: 1.0.0
- * date: 2020-11-22 17:17:12
+ * date: 2020-11-22 17:18:25
  * license: MIT
  */
 
