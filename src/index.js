@@ -1,8 +1,8 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.timeago = function(inValue, inNow) {
+  nx.timeago = function (inValue, inNow) {
     if (inValue) {
       var now = inNow ? new Date(inNow) : new Date();
       var publish = new Date(String(inValue).replace(/-/g, '/'));

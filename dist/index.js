@@ -1,17 +1,17 @@
 /*!
- * name: @feizheng/next-timeago
+ * name: @jswork/next-timeago
  * description: A time ago implement.
- * url: https://github.com/afeiship/next-timeago
+ * homepage: https://github.com/afeiship/next-timeago
  * version: 1.0.0
- * date: 2020-02-16 12:45:55
+ * date: 2020-11-22 17:17:12
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.timeago = function(inValue, inNow) {
+  nx.timeago = function (inValue, inNow) {
     if (inValue) {
       var now = inNow ? new Date(inNow) : new Date();
       var publish = new Date(String(inValue).replace(/-/g, '/'));
@@ -48,5 +48,3 @@
     module.exports = nx.timeago;
   }
 })();
-
-//# sourceMappingURL=next-timeago.js.map
